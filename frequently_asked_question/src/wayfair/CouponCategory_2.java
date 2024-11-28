@@ -30,18 +30,17 @@ public class CouponCategory_2 {
 
         // Initialize the maps with the provided lists
         initializeMaps(coupons, categories);
-        System.out.println(categoryCouponMap);
-        System.out.println(categoryParentMap);
+
         // Propagate coupons to all descendant categories
-//        propagateCoupons();
-        System.out.println(categoryParentMap);
+        propagateCoupons();
+
 
 //        // Test cases to check the getCoupon function
-//        System.out.println(getCoupon("Comforter Sets")); // Comforters Sale
-//        System.out.println(getCoupon("Bedding")); // Savings on Bedding
-//        System.out.println(getCoupon("Bathroom Accessories")); // Low price for Bed & Bath
-//        System.out.println(getCoupon("Soap Dispensers")); // Low price for Bed & Bath
-//        System.out.println(getCoupon("Toy Organizers")); // null
+        System.out.println(getCoupon("Comforter Sets")); // Comforters Sale
+        System.out.println(getCoupon("Bedding")); // Savings on Bedding
+        System.out.println(getCoupon("Bathroom Accessories")); // Low price for Bed & Bath
+        System.out.println(getCoupon("Soap Dispensers")); // Low price for Bed & Bath
+        System.out.println(getCoupon("Toy Organizers")); // null
     }
 
     // Method to initialize the maps
